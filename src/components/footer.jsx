@@ -9,7 +9,6 @@ const Footer = () => {
   const homeUrl = import.meta.env.VITE_HOME_URL;
   const emailUrl = import.meta.env.VITE_EMAIL_URL;
   const siteIcp = import.meta.env.VITE_SITE_ICP;
-  const analysisUrl = import.meta.env.VITE_ANALISIS_URL;
 
   return (
     <footer id="footer">
@@ -20,16 +19,8 @@ const Footer = () => {
         />
         <CustomLink iconDom={<Home />} to={homeUrl} />
         <CustomLink iconDom={<Mail />} to={`mailto:${emailUrl}`} />
-        <CustomLink iconDom={<Analysis />} to={analysisUrl} />
       </div>
       <div className="text">
-        {/* <p>
-          <CustomLink
-            text={Package.alia}
-            to="https://github.com/imsyy/site-status"
-          />
-          &nbsp;Version&nbsp;{Package.version}
-        </p> */}
         <p>
           基于&nbsp;
           <CustomLink to="https://uptimerobot.com/" text="UptimeRobot" />
